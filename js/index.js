@@ -19,6 +19,10 @@ async function fetchApi() {
   }
 }
 
+let date = new Date();
+let newDate = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+console.log(newDate);
+
 // Skipping all results that does not have an image (some results had a video)
 async function createHtml() {
   try {
