@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </header>
+    <div class="form-container">
+      <form id="form">
+        <div class="form-success"></div>
+        <div>
+          <label>
+            Name (required)
+            <input name="name" id="name" />
+          </label>
+          <div class="errorMsg" id="name-error">Please enter your name</div>
+        </div>
+        <div>
+          <label>
+            Subject (minimum 10 characters)
+            <input name="subject" id="subject" />
+          </label>
+          <div class="errorMsg" id="subject-error">Please enter a subject with a minimum of 10 characters</div>
+        </div>
+        <div>
+          <label>
+            Email (required)
+            <input name="email" id="email" />
+          </label>
+          <div class="errorMsg" id="email-error">Please enter a valid email</div>
+        </div>
+        <div>
+          <label>
+            Address (minimum 25 characters)
+            <input name="address" id="address" />
+          </label>
+          <div class="errorMsg" id="address-error">Please enter a valid address</div>
+        </div>
+        <button class="details-button submit-button">Submit</button>
+      </form>
+    </div>
+    <script src="js/contact.js" type="module"></script>
+  </body>
+</html>
+<!-- Name - required
+Subject - must have a value with a minimum length of 10
+Email - must have a value and be formatted like an email address
+Address - must have a value with a minimum length of 25 -->

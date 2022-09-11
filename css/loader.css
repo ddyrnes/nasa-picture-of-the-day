@@ -1,0 +1,49 @@
+.loader {
+  margin: auto;
+  top: 100px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  position: relative;
+  animation: text-color 2s ease-in-out infinite alternate;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  z-index: 1;
+}
+.loader-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  mix-blend-mode: overlay;
+  animation: rotate var(--duration) var(--timing) infinite;
+  pointer-events: none;
+}
+.loader-1 {
+  border-left-color: var(--red);
+  --duration: 2s;
+  --timing: ease-in-out;
+}
+.loader-2 {
+  border-top-color: var(--blue);
+  --duration: 2.5s;
+  --timing: ease-in;
+}
+.loader-3 {
+  border-right-color: var(--green);
+  --duration: 3s;
+  --timing: ease-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
